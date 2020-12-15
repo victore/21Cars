@@ -32,7 +32,7 @@ const Grid = (props) => {
             <div className='border-2 border-gray-200 rounded-lg p-4'>
               <div className='grid grid-cols-3 gap-4'>
                 {props.cars.map((car, id) => (
-                  <div key={car.id}>
+                  <div key={car.id} style={{ margin: "0 auto" }}>
                     <h1>
                       {car.name}{" "}
                       {showMessage[id] === true && (
